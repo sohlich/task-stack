@@ -6,27 +6,72 @@
 package cz.sohlich.workstack.service.impl;
 
 import cz.sohlich.workstack.api.dto.TaskDTO;
+import cz.sohlich.workstack.domain.Task;
+import cz.sohlich.workstack.repository.TaskRepository;
 import cz.sohlich.workstack.service.TaskService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 /**
  *
  * @author radek
  */
-public class TaskServiceImpl implements TaskService{
+@Component
+public class TaskServiceImpl implements TaskService {
 
+    @Autowired TaskRepository taskRepository;
+
+    
+    
     @Override
-    public TaskDTO createOrUpdateTask(TaskDTO task) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public TaskDTO createOrUpdateTask(TaskDTO dto) {
+        Task task = taskRepository.findOne(dto.getId());
+
+        if (task == null) {
+            task = new Task();
+        }
+
+        //Merge result with DTO
+        if (dto.getName() != null) {
+            task.setName(dto.getName());
+        }
+        if (dto.getOrder() != null) {
+            task.setOrder(dto.getOrder());
+        }
+        if (dto.getDeadline() != null) {
+            task.setDeadline(dto.getDeadline());
+        }
+        if (dto.getDescription() != null) {
+            task.setDescription(dto.getDescription());
+        }
+        if (dto.getEstimatedTime() != null) {
+            task.setEstimatedTime(dto.getEstimatedTime());
+        }
+        if (dto.getPriority() != null) {
+            task.setPriority(dto.getPriority());
+        }
+        if (dto.getTags() != null) {
+            task.setTags(dto.getTags());
+        }
+
+        task = taskRepository.save(task);
+        return new TaskDTO(task);
     }
 
     @Override
     public TaskDTO deleteTask(String id) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        Task task = taskRepository.findOne(id);
+        TaskDTO result = new TaskDTO(task);
+        taskRepository.delete(id);
+        return result;
+
     }
 
     @Override
     public TaskDTO selectTask(String id) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        Task task = taskRepository.findOne(id);
+        TaskDTO result = new TaskDTO(task);
+        return result;
     }
-    
+
 }

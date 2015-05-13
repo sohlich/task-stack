@@ -3,22 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package cz.sohlich.workstack.domain;
+package cz.sohlich.workstack.api.dto;
 
 import java.util.List;
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
 
 /**
  *
  * @author radek
  */
-@Document(collection = "app_users")
-public class User extends GenericEntity{
-   
-    String firstname, lastname;
-    String username;
-    String password;
+public class UserDTO {
+    String id,firstname, lastname;
+    String username,rawPassword,password;
     List<String> tags;
     List<String> categories;
 
@@ -62,12 +57,28 @@ public class User extends GenericEntity{
         this.categories = categories;
     }
 
+    public String getRawPassword() {
+        return rawPassword;
+    }
+
+    public void setRawPassword(String rawPassword) {
+        this.rawPassword = rawPassword;
+    }
+
     public String getPassword() {
         return password;
     }
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
     
     

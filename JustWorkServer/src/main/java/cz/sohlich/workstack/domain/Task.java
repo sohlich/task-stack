@@ -7,7 +7,6 @@ package cz.sohlich.workstack.domain;
 
 import java.util.Date;
 import java.util.List;
-import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.format.annotation.DateTimeFormat;
 
@@ -16,15 +15,14 @@ import org.springframework.format.annotation.DateTimeFormat;
  * @author radek
  */
 @Document(collection = "tasks")
-public class Task {
+public class Task extends GenericEntity{
 
-    @Id
-    String taskId;
     String name;
     Integer estimatedTime;
     
     @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME)
     Date deadline;
+    
     String Description;
     List<String> tags;
     String user;
@@ -32,13 +30,6 @@ public class Task {
     Integer order;
     String category;
 
-    public String getTaskId() {
-        return taskId;
-    }
-
-    public void setTaskId(String taskId) {
-        this.taskId = taskId;
-    }
 
     public String getName() {
         return name;
@@ -103,7 +94,14 @@ public class Task {
     public void setCategory(String category) {
         this.category = category;
     }
-    
+
+    public Date getDeadline() {
+        return deadline;
+    }
+
+    public void setDeadline(Date deadline) {
+        this.deadline = deadline;
+    }
     
     
 }

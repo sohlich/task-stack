@@ -6,11 +6,12 @@
 package cz.sohlich.workstack.api;
 
 import cz.sohlich.workstack.api.dto.TaskDTO;
+import cz.sohlich.workstack.service.TaskService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -21,19 +22,21 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping(value = "api/task")
 public class TaskResource {
 
+    @Autowired TaskService taskService;
+
     @RequestMapping(method = RequestMethod.GET, value = "/{id}")
     public TaskDTO selectOne(@PathVariable String id) {
-        return null;
+        return taskService.selectTask(id);
     }
 
     @RequestMapping(method = RequestMethod.PUT)
     public TaskDTO createOrUpdate(@RequestBody TaskDTO task) {
-        return null;
+        return taskService.createOrUpdateTask(task);
     }
 
     @RequestMapping(method = RequestMethod.DELETE, value = "/{id}")
     public TaskDTO delete(@PathVariable String id) {
-        return null;
+        return taskService.deleteTask(id);
     }
 
 }

@@ -6,11 +6,13 @@
 package cz.sohlich.workstack.service;
 
 import cz.sohlich.workstack.api.dto.TaskDTO;
+import org.springframework.stereotype.Service;
 
 /**
  *
  * @author radek
  */
+@Service
 public interface TaskService {
     public TaskDTO createOrUpdateTask(TaskDTO task);
     public TaskDTO deleteTask(String id);
