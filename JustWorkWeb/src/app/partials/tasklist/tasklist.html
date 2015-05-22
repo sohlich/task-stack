@@ -1,0 +1,28 @@
+<div layout="vertical" layout-fill>
+
+  <md-content flex>
+    <!-- <header ng-include="'app/components/navbar/navbar.html'"></header> -->
+    <div ng-header title="Tasks"></div>
+
+        <div layout="row">
+          <div flex="20"></div>
+          <div class="center-panel" flex="60">
+            <md-list>
+              <md-list-item class="md-2-line" ng-repeat="item in tasks">
+                <md-checkbox ng-model="item.done"></md-checkbox>
+                <div class="md-list-item-text">
+                  <h3>{{item.title}}</h3>
+                  <p>{{item.description}}</p>
+                </div>
+              </md-list-item>
+            </md-list>
+          </div>
+
+          <md-button class="md-fab md-fab-bottom-right" ng-click="showAdvanced($event)">
+            <fa name="plus">
+          </md-button>
+
+        </div>
+  </md-content>
+
+  </div>

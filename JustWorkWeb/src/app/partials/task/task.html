@@ -1,0 +1,25 @@
+<div layout="vertical" layout-fill>
+
+  <md-content flex>
+    <!-- <header ng-include="'app/components/navbar/navbar.html'"></header> -->
+    <div ng-header title="Task"></div>
+
+    <div layout="row">
+      <div flex="20"></div>
+      <div class="center-panel" flex="60">
+        <md-input-container>
+          <label>Title</label>
+          <input ng-model="formLogin.password">
+        </md-input-container>
+        <md-input-container>
+            <label>Description</label>
+            <textarea class="" ng-model="formLogin.password">
+        </md-input-container>
+      </div>
+      <md-button class="md-fab md-fab-bottom-right" aria-label="FAB">
+        <fa name="plus">
+      </md-button>
+    </div>
+  </md-content>
+
+</div>

@@ -1,0 +1,35 @@
+<div layout="vertical" layout-fill>
+    <md-content flex>
+        <div ng-header title="Sign in"></div>
+        <div layout="row">
+            <div flex="30"></div>
+            <div flex="33">
+
+                <div layout="row">
+                    <md-input-container flex>
+                        <label>Username</label>
+                        <input ng-model="formLogin.username">
+                    </md-input-container>
+                </div>
+                <div layout="row">
+                    <md-input-container>
+                        <label>Password</label>
+                        <input ng-model="formLogin.password">
+                    </md-input-container>
+                </div>
+                <div layout="row">
+                    <md-input-container>
+                        <md-button class="md-raised md-primary" ng-click="doLogin()">Sign in</md-button>
+                    </md-input-container>
+                </div>
+                <div layout="row">
+                    <p>
+                        Firstime here please <a href="#/register">register</a>.
+                    </p>
+                </div>
+            </div>
+            <div flex="33"></div>
+        </div>
+    </md-content>
+
+</div>

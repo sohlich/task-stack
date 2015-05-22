@@ -5,17 +5,15 @@
  */
 package cz.sohlich.workstack.security;
 
+import cz.sohlich.workstack.domain.User;
+import cz.sohlich.workstack.domain.UserAuthority;
 import cz.sohlich.workstack.repository.UserRepository;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Arrays;
 import javax.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
-import org.springframework.security.core.userdetails.User;
-import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 
@@ -27,7 +25,7 @@ import org.springframework.stereotype.Component;
 public class MongoUserDetailService implements UserDetailsService {
 
     @Autowired UserRepository repository;
-    @Autowired PasswordEncoder encoder;
+    PasswordEncoder encoder = new BCryptPasswordEncoder();
 
     @PostConstruct
     public void postConstruct() {
@@ -37,21 +35,24 @@ public class MongoUserDetailService implements UserDetailsService {
             user.setUsername("admin");
             user.setFirstname("admin");
             user.setLastname("admin");
+            user.setAccountNonExpired(true);
+            user.setAccountNonLocked(true);
+            user.setCredentialsNonExpired(true);
+            user.setEnabled(true);
             user.setPassword(encoder.encode("admin"));
+            user.setAuthorities(Arrays.asList(new UserAuthority("USER"),new UserAuthority("ADMIN")));
+            user.setExpires(Long.MAX_VALUE);
             repository.save(user);
         };
 
     }
 
     @Override
-    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+    public User loadUserByUsername(String username) throws UsernameNotFoundException {
         cz.sohlich.workstack.domain.User user = repository.findByUsername(username);
 
         if (user != null) {
-            List<GrantedAuthority> authorities
-                    = new ArrayList<>();
-            authorities.add(new SimpleGrantedAuthority(UserRoles.USER.toString()));
-            return new User(username, user.getPassword(), authorities);
+            return user;
 
         }
         throw new UsernameNotFoundException(username + "not found");

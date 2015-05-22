@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<md-toolbar flex>
+  <div class="md-toolbar-tools">
+    <div flex="30">
+      <h2>
+        <fa name="navicon" ng-style="{'color': checkColor}"></fa>
+        <span>{{title}}</span>
+      </h2>
+    </div>
+    <div flex></div>
+    <div ng-show="showUser()" flex="10">
+      <h2>
+        <fa name="user" ng-style="{'color': checkColor}"></fa>
+        <span>{{user.username}}</span>
+        <h2>
+    </div>
+  </div>
+</md-toolbar>

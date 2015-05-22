@@ -9,6 +9,7 @@ import cz.sohlich.workstack.api.dto.UserDTO;
 import cz.sohlich.workstack.domain.User;
 import cz.sohlich.workstack.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 
@@ -19,7 +20,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class UserServiceImpl {
 
-    @Autowired PasswordEncoder encoder;
+    PasswordEncoder encoder = new BCryptPasswordEncoder();
     @Autowired UserRepository userRepository;
 
     public UserDTO registerUser(UserDTO userDTO) {

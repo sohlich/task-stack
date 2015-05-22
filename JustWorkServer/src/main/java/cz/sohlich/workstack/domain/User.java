@@ -6,21 +6,26 @@
 package cz.sohlich.workstack.domain;
 
 import java.util.List;
-import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.security.core.userdetails.UserDetails;
 
 /**
  *
  * @author radek
  */
 @Document(collection = "app_users")
-public class User extends GenericEntity{
+public class User extends GenericEntity implements UserDetails{
    
     String firstname, lastname;
     String username;
     String password;
+    Long expires;
+    boolean accountNonExpired,accountNonLocked,credentialsNonExpired,enabled;
+    
+    
     List<String> tags;
     List<String> categories;
+    List<UserAuthority> authorities;
 
     public String getFirstname() {
         return firstname;
@@ -38,6 +43,7 @@ public class User extends GenericEntity{
         this.lastname = lastname;
     }
 
+    @Override
     public String getUsername() {
         return username;
     }
@@ -62,6 +68,7 @@ public class User extends GenericEntity{
         this.categories = categories;
     }
 
+    @Override
     public String getPassword() {
         return password;
     }
@@ -69,6 +76,64 @@ public class User extends GenericEntity{
     public void setPassword(String password) {
         this.password = password;
     }
+
+    public Long getExpires() {
+        return expires;
+    }
+
+    public void setExpires(Long expires) {
+        this.expires = expires;
+    }
+
+    @Override
+    public List<UserAuthority> getAuthorities() {
+        return authorities;
+    }
+
+    public void setAuthorities(List<UserAuthority> authorities) {
+        this.authorities = authorities;
+    }
+
+    public void setAccountNonExpired(boolean accountNonExpired) {
+        this.accountNonExpired = accountNonExpired;
+    }
+
+
+    public void setCredentialsNonExpired(boolean credentialsNonExpired) {
+        this.credentialsNonExpired = credentialsNonExpired;
+    }
+
+    public void setEnabled(boolean enabled) {
+        this.enabled = enabled;
+    }
+
+    public void setAccountNonLocked(boolean accountNonLocked) {
+        this.accountNonLocked = accountNonLocked;
+    }
+
+    
+    
+    @Override
+    public boolean isAccountNonExpired() {
+       return accountNonExpired;
+    }
+
+    @Override
+    public boolean isAccountNonLocked() {
+         return accountNonLocked;
+    }
+
+    @Override
+    public boolean isCredentialsNonExpired() {
+         return credentialsNonExpired;
+    }
+
+    @Override
+    public boolean isEnabled() {
+         return enabled;
+    }
+    
+    
     
     
 }

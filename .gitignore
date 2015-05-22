@@ -10,6 +10,12 @@ nbactions.xml
 nb-configuration.xml
 .nb-gradle/
 
+### Bower ###
+bower_components
+.bower-cache
+.bower-registry
+.bower-tmp
+
 
 ### Java ###
 *.class
@@ -35,3 +41,4 @@ pom.xml.next
 release.properties
 dependency-reduced-pom.xml
 buildNumber.properties
+/JustWorkWeb/nbproject/private/
