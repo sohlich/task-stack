@@ -1,7 +1,15 @@
+
+.view { height: 100%; width: 100%; margin: 0; }
 .center-panel{
   background-color: #d0e4fe;
 }
 
-.aligner-item-bottom {
-  align-self: flex-end;
+md-whiteframe {
+  background: #fff;
+  margin: 20px;
+  padding: 20px; }
+
+
+md-button .tasklist-md-button{
+  margin-top: -53px;
 }
