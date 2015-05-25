@@ -9,6 +9,13 @@ angular.module('justWork')
                     isArray: true,
                     headers:{'x-auth-token':$localStorage.hmacToken},
                     params:{}
+                },
+                saveTask: {
+                    method: 'PUT',
+                    url: baseUrl+'/api/task',
+                    isArray: false,
+                    headers:{'x-auth-token':$localStorage.hmacToken},
+                    params:{}
                 }
             });
         }]);

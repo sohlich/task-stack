@@ -25,7 +25,8 @@ public class TaskServiceImpl implements TaskService {
     
     @Override
     public TaskDTO createOrUpdateTask(TaskDTO dto) {
-        Task task = taskRepository.findOne(dto.getId());
+       
+        Task task = dto.getId() != null ? taskRepository.findOne(dto.getId()) : null;
 
         if (task == null) {
             task = new Task();
