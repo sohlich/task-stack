@@ -1,28 +1,29 @@
 'use strict';
 
 angular.module('justWork')
-  .controller('TaskCtrl', function($scope, $location, Security, UserStorage, TaskResource) {
-
-    $scope.task = {
-      name: "",
-      estimatedTime: "",
-      deadline: "",
-      description: "",
-      tags: [],
-      priority:1,
-      category:""
-    };
+  .controller('TaskCtrl', TaskCtrl);
 
 
-    $scope.addClick = function(){
+function TaskCtrl($scope, $location, Security, UserStorage, TaskResource) {
+  $scope.task = {
+    name: "",
+    estimatedTime: "",
+    deadline: "",
+    description: "",
+    tags: [],
+    priority: 1,
+    category: ""
+  };
 
-      var task = $scope.task;
 
-      TaskResource.saveTask(task)
-      .$promise.then(function(){
+  $scope.addClick = function() {
+
+    var task = $scope.task;
+
+    TaskResource.saveTask(task)
+      .$promise.then(function() {
         $location.path('/tasklist');
       });
 
-    };
-
-  });
+  };
+};

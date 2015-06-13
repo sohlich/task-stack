@@ -1,0 +1,340 @@
+Error parsing command line: unknown option dppath
+try 'mongod --help' for more information
+Error parsing command line: unknown option dppath
+try 'mongod --help' for more information
+2015-05-27T20:14:03.225+0200 I JOURNAL  [initandlisten] journal dir=/home/radek/Server/mongo/data/journal
+2015-05-27T20:14:03.229+0200 I JOURNAL  [initandlisten] recover : no journal files present, no recovery needed
+2015-05-27T20:14:03.308+0200 I JOURNAL  [durability] Durability thread started
+2015-05-27T20:14:03.308+0200 I JOURNAL  [journal writer] Journal writer thread started
+2015-05-27T20:14:03.310+0200 I CONTROL  [initandlisten] MongoDB starting : pid=13624 port=27017 dbpath=/home/radek/Server/mongo/data/ 64-bit host=localhost.localdomain
+2015-05-27T20:14:03.310+0200 I CONTROL  [initandlisten] 
+2015-05-27T20:14:03.310+0200 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2015-05-27T20:14:03.310+0200 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2015-05-27T20:14:03.310+0200 I CONTROL  [initandlisten] 
+2015-05-27T20:14:03.310+0200 I CONTROL  [initandlisten] db version v3.0.3
+2015-05-27T20:14:03.310+0200 I CONTROL  [initandlisten] git version: b40106b36eecd1b4407eb1ad1af6bc60593c6105
+2015-05-27T20:14:03.310+0200 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1k-fips 8 Jan 2015
+2015-05-27T20:14:03.310+0200 I CONTROL  [initandlisten] build info: Linux ip-10-165-116-142 3.10.0-121.el7.x86_64 #1 SMP Tue Apr 8 10:48:19 EDT 2014 x86_64 BOOST_LIB_VERSION=1_49
+2015-05-27T20:14:03.310+0200 I CONTROL  [initandlisten] allocator: tcmalloc
+2015-05-27T20:14:03.311+0200 I CONTROL  [initandlisten] options: { storage: { dbPath: "/home/radek/Server/mongo/data/" } }
+2015-05-27T20:14:03.311+0200 I INDEX    [initandlisten] allocating new ns file /home/radek/Server/mongo/data/local.ns, filling with zeroes...
+2015-05-27T20:14:03.363+0200 I STORAGE  [FileAllocator] allocating new datafile /home/radek/Server/mongo/data/local.0, filling with zeroes...
+2015-05-27T20:14:03.363+0200 I STORAGE  [FileAllocator] creating directory /home/radek/Server/mongo/data/_tmp
+2015-05-27T20:14:03.367+0200 I STORAGE  [FileAllocator] done allocating datafile /home/radek/Server/mongo/data/local.0, size: 64MB,  took 0.001 secs
+2015-05-27T20:14:03.371+0200 I NETWORK  [initandlisten] waiting for connections on port 27017
+2015-05-27T20:14:13.494+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:40442 #1 (1 connection now open)
+2015-05-27T20:14:13.511+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:40443 #2 (2 connections now open)
+2015-05-27T20:15:24.076+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:40460 #3 (3 connections now open)
+2015-05-27T20:15:24.086+0200 I NETWORK  [conn3] end connection 127.0.0.1:40460 (2 connections now open)
+2015-05-27T20:16:01.954+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:40465 #4 (3 connections now open)
+2015-05-27T20:16:01.963+0200 I NETWORK  [conn4] end connection 127.0.0.1:40465 (2 connections now open)
+2015-05-27T20:16:17.145+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:40467 #5 (3 connections now open)
+2015-05-27T20:16:17.153+0200 I INDEX    [conn5] allocating new ns file /home/radek/Server/mongo/data/m101.ns, filling with zeroes...
+2015-05-27T20:16:17.153+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:40468 #6 (4 connections now open)
+2015-05-27T20:16:17.209+0200 I STORAGE  [FileAllocator] allocating new datafile /home/radek/Server/mongo/data/m101.0, filling with zeroes...
+2015-05-27T20:16:17.210+0200 I STORAGE  [FileAllocator] done allocating datafile /home/radek/Server/mongo/data/m101.0, size: 64MB,  took 0 secs
+2015-05-27T20:16:17.215+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:40469 #7 (5 connections now open)
+2015-05-27T20:16:17.219+0200 I NETWORK  [conn7] end connection 127.0.0.1:40469 (4 connections now open)
+2015-05-27T20:16:17.219+0200 I NETWORK  [conn6] end connection 127.0.0.1:40468 (3 connections now open)
+2015-05-27T20:16:17.220+0200 I NETWORK  [conn5] end connection 127.0.0.1:40467 (2 connections now open)
+2015-05-27T20:16:33.239+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:40470 #8 (3 connections now open)
+2015-05-27T20:16:33.255+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:40471 #9 (4 connections now open)
+2015-05-27T20:16:34.158+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:40472 #10 (5 connections now open)
+2015-05-27T20:16:34.171+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:40473 #11 (6 connections now open)
+2015-05-27T21:23:46.886+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:40997 #12 (7 connections now open)
+2015-05-27T21:24:10.033+0200 I NETWORK  [conn12] end connection 127.0.0.1:40997 (6 connections now open)
+2015-05-27T21:25:32.923+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:41145 #13 (7 connections now open)
+2015-05-27T21:26:04.055+0200 I COMMAND  [conn13] terminating, shutdown command received
+2015-05-27T21:26:04.055+0200 I CONTROL  [conn13] now exiting
+2015-05-27T21:26:04.055+0200 I NETWORK  [conn13] shutdown: going to close listening sockets...
+2015-05-27T21:26:04.055+0200 I NETWORK  [conn13] closing listening socket: 5
+2015-05-27T21:26:04.055+0200 I NETWORK  [conn13] closing listening socket: 6
+2015-05-27T21:26:04.055+0200 I NETWORK  [conn13] removing socket file: /tmp/mongodb-27017.sock
+2015-05-27T21:26:04.055+0200 I NETWORK  [conn13] shutdown: going to flush diaglog...
+2015-05-27T21:26:04.055+0200 I NETWORK  [conn13] shutdown: going to close sockets...
+2015-05-27T21:26:04.055+0200 I STORAGE  [conn13] shutdown: waiting for fs preallocator...
+2015-05-27T21:26:04.056+0200 I STORAGE  [conn13] shutdown: final commit...
+2015-05-27T21:26:04.056+0200 I NETWORK  [conn8] end connection 127.0.0.1:40470 (6 connections now open)
+2015-05-27T21:26:04.056+0200 I NETWORK  [conn1] end connection 127.0.0.1:40442 (6 connections now open)
+2015-05-27T21:26:04.056+0200 I NETWORK  [conn9] end connection 127.0.0.1:40471 (6 connections now open)
+2015-05-27T21:26:04.056+0200 I NETWORK  [conn10] end connection 127.0.0.1:40472 (6 connections now open)
+2015-05-27T21:26:04.056+0200 I NETWORK  [conn11] end connection 127.0.0.1:40473 (6 connections now open)
+2015-05-27T21:26:04.056+0200 I NETWORK  [conn2] end connection 127.0.0.1:40443 (5 connections now open)
+2015-05-27T21:26:04.059+0200 I JOURNAL  [conn13] journalCleanup...
+2015-05-27T21:26:04.059+0200 I JOURNAL  [conn13] removeJournalFiles
+2015-05-27T21:26:04.061+0200 I JOURNAL  [conn13] Terminating durability thread ...
+2015-05-27T21:26:04.158+0200 I JOURNAL  [journal writer] Journal writer thread stopped
+2015-05-27T21:26:04.159+0200 I JOURNAL  [durability] Durability thread stopped
+2015-05-27T21:26:04.159+0200 I STORAGE  [conn13] shutdown: closing all files...
+2015-05-27T21:26:04.163+0200 I STORAGE  [conn13] closeAllFiles() finished
+2015-05-27T21:26:04.163+0200 I STORAGE  [conn13] shutdown: removing fs lock...
+2015-05-27T21:26:04.164+0200 I CONTROL  [conn13] dbexit:  rc: 0
+2015-06-10T18:31:12.853+0200 I JOURNAL  [initandlisten] journal dir=/home/radek/Server/mongo/data/journal
+2015-06-10T18:31:12.855+0200 I JOURNAL  [initandlisten] recover : no journal files present, no recovery needed
+2015-06-10T18:31:13.011+0200 I JOURNAL  [durability] Durability thread started
+2015-06-10T18:31:13.011+0200 I JOURNAL  [journal writer] Journal writer thread started
+2015-06-10T18:31:13.014+0200 I CONTROL  [initandlisten] MongoDB starting : pid=19230 port=27017 dbpath=/home/radek/Server/mongo/data/ 64-bit host=localhost.localdomain
+2015-06-10T18:31:13.014+0200 I CONTROL  [initandlisten] 
+2015-06-10T18:31:13.014+0200 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/defrag is 'always'.
+2015-06-10T18:31:13.014+0200 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2015-06-10T18:31:13.015+0200 I CONTROL  [initandlisten] 
+2015-06-10T18:31:13.015+0200 I CONTROL  [initandlisten] db version v3.0.3
+2015-06-10T18:31:13.015+0200 I CONTROL  [initandlisten] git version: b40106b36eecd1b4407eb1ad1af6bc60593c6105
+2015-06-10T18:31:13.015+0200 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1k-fips 8 Jan 2015
+2015-06-10T18:31:13.015+0200 I CONTROL  [initandlisten] build info: Linux ip-10-165-116-142 3.10.0-121.el7.x86_64 #1 SMP Tue Apr 8 10:48:19 EDT 2014 x86_64 BOOST_LIB_VERSION=1_49
+2015-06-10T18:31:13.015+0200 I CONTROL  [initandlisten] allocator: tcmalloc
+2015-06-10T18:31:13.015+0200 I CONTROL  [initandlisten] options: { storage: { dbPath: "/home/radek/Server/mongo/data/" } }
+2015-06-10T18:31:13.335+0200 I NETWORK  [initandlisten] waiting for connections on port 27017
+2015-06-10T18:32:13.616+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56996 #1 (1 connection now open)
+2015-06-10T18:32:13.631+0200 I INDEX    [conn1] allocating new ns file /home/radek/Server/mongo/data/school.ns, filling with zeroes...
+2015-06-10T18:32:13.692+0200 I STORAGE  [FileAllocator] allocating new datafile /home/radek/Server/mongo/data/school.0, filling with zeroes...
+2015-06-10T18:32:13.692+0200 I STORAGE  [FileAllocator] creating directory /home/radek/Server/mongo/data/_tmp
+2015-06-10T18:32:13.699+0200 I STORAGE  [FileAllocator] done allocating datafile /home/radek/Server/mongo/data/school.0, size: 64MB,  took 0.004 secs
+2015-06-10T18:32:13.710+0200 I NETWORK  [conn1] end connection 127.0.0.1:56996 (0 connections now open)
+2015-06-10T18:32:20.147+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:56998 #2 (1 connection now open)
+2015-06-10T19:44:24.990+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57594 #3 (2 connections now open)
+2015-06-10T19:44:25.080+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57595 #4 (3 connections now open)
+2015-06-10T19:44:25.126+0200 I NETWORK  [conn3] end connection 127.0.0.1:57594 (2 connections now open)
+2015-06-10T19:44:25.127+0200 I NETWORK  [conn4] end connection 127.0.0.1:57595 (1 connection now open)
+2015-06-10T19:47:55.734+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57674 #5 (2 connections now open)
+2015-06-10T19:47:55.777+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57675 #6 (3 connections now open)
+2015-06-10T19:47:55.812+0200 I NETWORK  [conn6] end connection 127.0.0.1:57675 (2 connections now open)
+2015-06-10T19:47:55.813+0200 I NETWORK  [conn5] end connection 127.0.0.1:57674 (1 connection now open)
+2015-06-10T19:50:17.807+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57704 #7 (2 connections now open)
+2015-06-10T19:50:41.906+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57710 #8 (3 connections now open)
+2015-06-10T19:50:47.350+0200 I NETWORK  [conn8] end connection 127.0.0.1:57710 (2 connections now open)
+2015-06-10T19:50:47.352+0200 I NETWORK  [conn7] end connection 127.0.0.1:57704 (1 connection now open)
+2015-06-10T19:51:37.006+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57726 #9 (2 connections now open)
+2015-06-10T19:51:37.021+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57727 #10 (3 connections now open)
+2015-06-10T19:51:50.903+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57730 #11 (4 connections now open)
+2015-06-10T19:51:50.919+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57731 #12 (5 connections now open)
+2015-06-10T19:52:26.104+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57738 #13 (6 connections now open)
+2015-06-10T19:52:26.145+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57739 #14 (7 connections now open)
+2015-06-10T19:52:26.203+0200 I NETWORK  [conn14] end connection 127.0.0.1:57739 (6 connections now open)
+2015-06-10T19:52:26.204+0200 I NETWORK  [conn13] end connection 127.0.0.1:57738 (5 connections now open)
+2015-06-10T20:15:40.869+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57885 #15 (6 connections now open)
+2015-06-10T20:15:40.915+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57886 #16 (7 connections now open)
+2015-06-10T20:15:41.140+0200 I NETWORK  [conn16] end connection 127.0.0.1:57886 (6 connections now open)
+2015-06-10T20:15:41.140+0200 I NETWORK  [conn15] end connection 127.0.0.1:57885 (5 connections now open)
+2015-06-10T20:17:07.638+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57906 #17 (6 connections now open)
+2015-06-10T20:17:07.691+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57907 #18 (7 connections now open)
+2015-06-10T20:18:23.112+0200 I NETWORK  [conn18] end connection 127.0.0.1:57907 (6 connections now open)
+2015-06-10T20:18:23.112+0200 I NETWORK  [conn17] end connection 127.0.0.1:57906 (6 connections now open)
+2015-06-10T20:18:30.251+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57931 #19 (6 connections now open)
+2015-06-10T20:18:30.312+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57932 #20 (7 connections now open)
+2015-06-10T20:21:10.931+0200 I NETWORK  [conn19] end connection 127.0.0.1:57931 (6 connections now open)
+2015-06-10T20:21:10.932+0200 I NETWORK  [conn20] end connection 127.0.0.1:57932 (5 connections now open)
+2015-06-10T20:21:19.569+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57975 #21 (6 connections now open)
+2015-06-10T20:21:19.618+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57976 #22 (7 connections now open)
+2015-06-10T20:21:19.839+0200 I NETWORK  [conn22] end connection 127.0.0.1:57976 (6 connections now open)
+2015-06-10T20:21:19.840+0200 I NETWORK  [conn21] end connection 127.0.0.1:57975 (5 connections now open)
+2015-06-10T20:22:10.838+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57988 #23 (6 connections now open)
+2015-06-10T20:22:10.881+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:57989 #24 (7 connections now open)
+2015-06-10T20:24:52.109+0200 I NETWORK  [conn23] end connection 127.0.0.1:57988 (6 connections now open)
+2015-06-10T20:24:52.110+0200 I NETWORK  [conn24] end connection 127.0.0.1:57989 (5 connections now open)
+2015-06-10T20:28:33.020+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58081 #25 (6 connections now open)
+2015-06-10T20:28:33.056+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58082 #26 (7 connections now open)
+2015-06-10T20:28:33.345+0200 I NETWORK  [conn26] end connection 127.0.0.1:58082 (6 connections now open)
+2015-06-10T20:28:33.345+0200 I NETWORK  [conn25] end connection 127.0.0.1:58081 (5 connections now open)
+2015-06-10T20:29:32.769+0200 I NETWORK  [conn2] end connection 127.0.0.1:56998 (4 connections now open)
+2015-06-10T20:29:36.525+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58100 #27 (5 connections now open)
+2015-06-10T20:43:20.923+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58354 #28 (6 connections now open)
+2015-06-10T20:43:21.012+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58355 #29 (7 connections now open)
+2015-06-10T20:43:21.042+0200 I NETWORK  [conn29] end connection 127.0.0.1:58355 (6 connections now open)
+2015-06-10T20:43:21.043+0200 I NETWORK  [conn28] end connection 127.0.0.1:58354 (5 connections now open)
+2015-06-10T20:43:47.002+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58363 #30 (6 connections now open)
+2015-06-10T20:43:47.050+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58364 #31 (7 connections now open)
+2015-06-10T20:43:47.326+0200 I NETWORK  [conn31] end connection 127.0.0.1:58364 (6 connections now open)
+2015-06-10T20:43:47.327+0200 I NETWORK  [conn30] end connection 127.0.0.1:58363 (5 connections now open)
+2015-06-10T20:44:10.009+0200 I COMMAND  [conn10] dropDatabase school starting
+2015-06-10T20:44:10.022+0200 I JOURNAL  [conn10] journalCleanup...
+2015-06-10T20:44:10.022+0200 I JOURNAL  [conn10] removeJournalFiles
+2015-06-10T20:44:10.033+0200 I JOURNAL  [conn10] journalCleanup...
+2015-06-10T20:44:10.033+0200 I JOURNAL  [conn10] removeJournalFiles
+2015-06-10T20:44:10.042+0200 I COMMAND  [conn10] dropDatabase school finished
+2015-06-10T20:44:12.732+0200 I NETWORK  [conn27] end connection 127.0.0.1:58100 (4 connections now open)
+2015-06-10T20:44:16.661+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58374 #32 (5 connections now open)
+2015-06-10T20:44:16.677+0200 I INDEX    [conn32] allocating new ns file /home/radek/Server/mongo/data/school.ns, filling with zeroes...
+2015-06-10T20:44:16.741+0200 I STORAGE  [FileAllocator] allocating new datafile /home/radek/Server/mongo/data/school.0, filling with zeroes...
+2015-06-10T20:44:16.743+0200 I STORAGE  [FileAllocator] done allocating datafile /home/radek/Server/mongo/data/school.0, size: 64MB,  took 0.001 secs
+2015-06-10T20:44:16.758+0200 I NETWORK  [conn32] end connection 127.0.0.1:58374 (4 connections now open)
+2015-06-10T20:44:27.465+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58376 #33 (5 connections now open)
+2015-06-10T20:44:27.531+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58377 #34 (6 connections now open)
+2015-06-10T20:44:27.830+0200 I NETWORK  [conn34] end connection 127.0.0.1:58377 (5 connections now open)
+2015-06-10T20:44:27.831+0200 I NETWORK  [conn33] end connection 127.0.0.1:58376 (4 connections now open)
+2015-06-10T20:44:41.951+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58383 #35 (5 connections now open)
+2015-06-10T20:50:14.853+0200 I COMMAND  [conn10] dropDatabase school starting
+2015-06-10T20:50:14.860+0200 I JOURNAL  [conn10] journalCleanup...
+2015-06-10T20:50:14.861+0200 I JOURNAL  [conn10] removeJournalFiles
+2015-06-10T20:50:14.869+0200 I JOURNAL  [conn10] journalCleanup...
+2015-06-10T20:50:14.869+0200 I JOURNAL  [conn10] removeJournalFiles
+2015-06-10T20:50:14.876+0200 I COMMAND  [conn10] dropDatabase school finished
+2015-06-10T20:50:52.105+0200 I NETWORK  [conn35] end connection 127.0.0.1:58383 (4 connections now open)
+2015-06-10T20:50:54.913+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58490 #36 (5 connections now open)
+2015-06-10T20:50:54.928+0200 I INDEX    [conn36] allocating new ns file /home/radek/Server/mongo/data/school.ns, filling with zeroes...
+2015-06-10T20:50:54.992+0200 I STORAGE  [FileAllocator] allocating new datafile /home/radek/Server/mongo/data/school.0, filling with zeroes...
+2015-06-10T20:50:54.994+0200 I STORAGE  [FileAllocator] done allocating datafile /home/radek/Server/mongo/data/school.0, size: 64MB,  took 0.001 secs
+2015-06-10T20:50:55.003+0200 I NETWORK  [conn36] end connection 127.0.0.1:58490 (4 connections now open)
+2015-06-10T20:51:03.615+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58493 #37 (5 connections now open)
+2015-06-10T20:51:53.866+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58510 #38 (6 connections now open)
+2015-06-10T20:51:53.903+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58511 #39 (7 connections now open)
+2015-06-10T20:51:53.967+0200 I NETWORK  [conn39] end connection 127.0.0.1:58511 (6 connections now open)
+2015-06-10T20:51:53.968+0200 I NETWORK  [conn38] end connection 127.0.0.1:58510 (5 connections now open)
+2015-06-10T20:54:25.751+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58596 #40 (6 connections now open)
+2015-06-10T20:54:25.844+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58597 #41 (7 connections now open)
+2015-06-10T20:54:26.048+0200 I NETWORK  [conn41] end connection 127.0.0.1:58597 (6 connections now open)
+2015-06-10T20:54:26.048+0200 I NETWORK  [conn40] end connection 127.0.0.1:58596 (5 connections now open)
+2015-06-10T21:02:02.618+0200 I COMMAND  [conn37] CMD: drop school.students
+2015-06-10T21:02:08.856+0200 I NETWORK  [conn37] end connection 127.0.0.1:58493 (4 connections now open)
+2015-06-10T21:02:10.570+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58779 #42 (5 connections now open)
+2015-06-10T21:02:10.591+0200 I NETWORK  [conn42] end connection 127.0.0.1:58779 (4 connections now open)
+2015-06-10T21:02:13.265+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58780 #43 (5 connections now open)
+2015-06-10T21:04:23.349+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58816 #44 (6 connections now open)
+2015-06-10T21:04:23.421+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58817 #45 (7 connections now open)
+2015-06-10T21:04:23.452+0200 I NETWORK  [conn45] end connection 127.0.0.1:58817 (6 connections now open)
+2015-06-10T21:04:23.453+0200 I NETWORK  [conn44] end connection 127.0.0.1:58816 (5 connections now open)
+2015-06-10T21:04:50.073+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58827 #46 (6 connections now open)
+2015-06-10T21:04:50.122+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58828 #47 (7 connections now open)
+2015-06-10T21:04:50.364+0200 I NETWORK  [conn47] end connection 127.0.0.1:58828 (6 connections now open)
+2015-06-10T21:04:50.365+0200 I NETWORK  [conn46] end connection 127.0.0.1:58827 (5 connections now open)
+2015-06-10T21:42:25.888+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59002 #48 (6 connections now open)
+2015-06-10T21:42:35.870+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59012 #49 (7 connections now open)
+2015-06-10T21:43:38.901+0200 I NETWORK  [conn48] end connection 127.0.0.1:59002 (6 connections now open)
+2015-06-10T21:43:38.901+0200 I NETWORK  [conn49] end connection 127.0.0.1:59012 (6 connections now open)
+2015-06-10T21:43:50.301+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59029 #50 (6 connections now open)
+2015-06-10T21:44:00.344+0200 I NETWORK  [conn12] end connection 127.0.0.1:57731 (5 connections now open)
+2015-06-10T21:44:00.349+0200 I COMMAND  [conn11] killcursors: found 0 of 1
+2015-06-10T21:44:00.349+0200 I NETWORK  [conn11] end connection 127.0.0.1:57730 (4 connections now open)
+2015-06-10T21:44:17.750+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59037 #51 (5 connections now open)
+2015-06-10T21:45:03.381+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59054 #52 (6 connections now open)
+2015-06-10T21:45:03.390+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59055 #53 (7 connections now open)
+2015-06-10T21:45:05.546+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59056 #54 (8 connections now open)
+2015-06-10T21:45:05.556+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59057 #55 (9 connections now open)
+2015-06-10T21:45:16.519+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59060 #56 (10 connections now open)
+2015-06-10T21:45:16.533+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59061 #57 (11 connections now open)
+2015-06-10T21:59:01.759+0200 I NETWORK  [conn51] end connection 127.0.0.1:59037 (10 connections now open)
+2015-06-10T21:59:01.761+0200 I NETWORK  [conn50] end connection 127.0.0.1:59029 (10 connections now open)
+2015-06-10T22:00:00.169+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59340 #58 (10 connections now open)
+2015-06-10T22:00:17.793+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59346 #59 (11 connections now open)
+2015-06-10T22:00:48.768+0200 I NETWORK  [conn53] end connection 127.0.0.1:59055 (10 connections now open)
+2015-06-10T22:00:48.769+0200 I NETWORK  [conn52] end connection 127.0.0.1:59054 (9 connections now open)
+2015-06-10T22:00:48.773+0200 I NETWORK  [conn55] end connection 127.0.0.1:59057 (8 connections now open)
+2015-06-10T22:00:48.774+0200 I NETWORK  [conn54] end connection 127.0.0.1:59056 (7 connections now open)
+2015-06-10T22:00:48.778+0200 I NETWORK  [conn57] end connection 127.0.0.1:59061 (6 connections now open)
+2015-06-10T22:00:48.779+0200 I NETWORK  [conn56] end connection 127.0.0.1:59060 (5 connections now open)
+2015-06-10T22:00:48.810+0200 I NETWORK  [conn10] end connection 127.0.0.1:57727 (4 connections now open)
+2015-06-10T22:00:48.810+0200 I NETWORK  [conn9] end connection 127.0.0.1:57726 (3 connections now open)
+2015-06-10T22:00:53.538+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59357 #60 (4 connections now open)
+2015-06-10T22:00:53.553+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59358 #61 (5 connections now open)
+2015-06-10T22:01:02.535+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59365 #62 (6 connections now open)
+2015-06-10T22:01:02.553+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59366 #63 (7 connections now open)
+2015-06-10T22:01:13.407+0200 I COMMAND  [conn61] dropDatabase m101 starting
+2015-06-10T22:01:13.416+0200 I JOURNAL  [conn61] journalCleanup...
+2015-06-10T22:01:13.416+0200 I JOURNAL  [conn61] removeJournalFiles
+2015-06-10T22:01:13.424+0200 I JOURNAL  [conn61] journalCleanup...
+2015-06-10T22:01:13.424+0200 I JOURNAL  [conn61] removeJournalFiles
+2015-06-10T22:01:13.427+0200 I COMMAND  [conn61] dropDatabase m101 finished
+2015-06-10T22:01:17.507+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59371 #64 (8 connections now open)
+2015-06-10T22:01:17.520+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59372 #65 (9 connections now open)
+2015-06-10T22:01:23.598+0200 I COMMAND  [conn61] dropDatabase simpleblog starting
+2015-06-10T22:01:23.605+0200 I JOURNAL  [conn61] journalCleanup...
+2015-06-10T22:01:23.605+0200 I JOURNAL  [conn61] removeJournalFiles
+2015-06-10T22:01:23.611+0200 I JOURNAL  [conn61] journalCleanup...
+2015-06-10T22:01:23.611+0200 I JOURNAL  [conn61] removeJournalFiles
+2015-06-10T22:01:23.615+0200 I COMMAND  [conn61] dropDatabase simpleblog finished
+2015-06-10T22:01:32.153+0200 I NETWORK  [conn58] end connection 127.0.0.1:59340 (8 connections now open)
+2015-06-10T22:01:32.153+0200 I NETWORK  [conn59] end connection 127.0.0.1:59346 (8 connections now open)
+2015-06-10T22:02:16.686+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59386 #66 (8 connections now open)
+2015-06-10T22:02:28.743+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59392 #67 (9 connections now open)
+2015-06-10T22:03:44.364+0200 I NETWORK  [conn66] end connection 127.0.0.1:59386 (8 connections now open)
+2015-06-10T22:03:44.364+0200 I NETWORK  [conn67] end connection 127.0.0.1:59392 (7 connections now open)
+2015-06-10T22:03:56.166+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59418 #68 (8 connections now open)
+2015-06-10T22:04:03.885+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59422 #69 (9 connections now open)
+2015-06-10T22:05:46.931+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59458 #70 (10 connections now open)
+2015-06-10T22:05:46.951+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59459 #71 (11 connections now open)
+2015-06-10T22:07:16.883+0200 I NETWORK  [conn68] end connection 127.0.0.1:59418 (10 connections now open)
+2015-06-10T22:07:16.883+0200 I NETWORK  [conn69] end connection 127.0.0.1:59422 (10 connections now open)
+2015-06-10T22:08:12.305+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59500 #72 (10 connections now open)
+2015-06-10T22:08:23.630+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59507 #73 (11 connections now open)
+2015-06-10T22:10:26.409+0200 I NETWORK  [conn72] end connection 127.0.0.1:59500 (10 connections now open)
+2015-06-10T22:10:26.409+0200 I NETWORK  [conn73] end connection 127.0.0.1:59507 (10 connections now open)
+2015-06-10T22:11:12.179+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59584 #74 (10 connections now open)
+2015-06-10T22:11:12.244+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59586 #75 (11 connections now open)
+2015-06-10T22:11:12.437+0200 I NETWORK  [conn75] end connection 127.0.0.1:59586 (10 connections now open)
+2015-06-10T22:11:12.438+0200 I NETWORK  [conn74] end connection 127.0.0.1:59584 (9 connections now open)
+2015-06-10T22:11:30.206+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59590 #76 (10 connections now open)
+2015-06-10T22:11:34.958+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59594 #77 (11 connections now open)
+2015-06-10T22:13:15.814+0200 I NETWORK  [conn76] end connection 127.0.0.1:59590 (10 connections now open)
+2015-06-10T22:13:15.814+0200 I NETWORK  [conn77] end connection 127.0.0.1:59594 (10 connections now open)
+2015-06-10T22:13:20.525+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59619 #78 (10 connections now open)
+2015-06-10T22:13:34.632+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59624 #79 (11 connections now open)
+2015-06-10T22:14:06.763+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59636 #80 (12 connections now open)
+2015-06-10T22:14:06.780+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59637 #81 (13 connections now open)
+2015-06-10T22:15:08.564+0200 I NETWORK  [conn78] end connection 127.0.0.1:59619 (12 connections now open)
+2015-06-10T22:15:08.565+0200 I NETWORK  [conn79] end connection 127.0.0.1:59624 (12 connections now open)
+2015-06-10T22:15:21.828+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59663 #82 (12 connections now open)
+2015-06-10T22:15:32.167+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59667 #83 (13 connections now open)
+2015-06-10T22:16:06.078+0200 I NETWORK  [conn81] end connection 127.0.0.1:59637 (12 connections now open)
+2015-06-10T22:16:06.079+0200 I NETWORK  [conn80] end connection 127.0.0.1:59636 (11 connections now open)
+2015-06-10T22:16:07.177+0200 I NETWORK  [conn63] end connection 127.0.0.1:59366 (10 connections now open)
+2015-06-10T22:16:07.177+0200 I NETWORK  [conn62] end connection 127.0.0.1:59365 (9 connections now open)
+2015-06-10T22:16:08.021+0200 I NETWORK  [conn65] end connection 127.0.0.1:59372 (8 connections now open)
+2015-06-10T22:16:08.022+0200 I NETWORK  [conn64] end connection 127.0.0.1:59371 (7 connections now open)
+2015-06-10T22:19:56.092+0200 I NETWORK  [conn43] end connection 127.0.0.1:58780 (6 connections now open)
+2015-06-10T22:20:58.161+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59757 #84 (7 connections now open)
+2015-06-10T22:20:58.251+0200 I NETWORK  [conn84] end connection 127.0.0.1:59757 (6 connections now open)
+2015-06-10T22:21:30.377+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59781 #85 (7 connections now open)
+2015-06-10T22:21:30.437+0200 I NETWORK  [conn85] end connection 127.0.0.1:59781 (6 connections now open)
+2015-06-10T22:21:39.464+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59793 #86 (7 connections now open)
+2015-06-10T22:21:39.558+0200 I NETWORK  [conn86] end connection 127.0.0.1:59793 (6 connections now open)
+2015-06-10T22:22:02.342+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59814 #87 (7 connections now open)
+2015-06-10T22:22:02.431+0200 I NETWORK  [conn87] end connection 127.0.0.1:59814 (6 connections now open)
+2015-06-10T22:26:25.833+0200 I COMMAND  [conn61] CMD: drop school.students
+2015-06-10T22:26:30.285+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59927 #88 (7 connections now open)
+2015-06-10T22:26:30.307+0200 I NETWORK  [conn88] end connection 127.0.0.1:59927 (6 connections now open)
+2015-06-10T22:26:36.286+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59931 #89 (7 connections now open)
+2015-06-10T22:26:36.297+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59932 #90 (8 connections now open)
+2015-06-10T22:26:57.929+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59940 #91 (9 connections now open)
+2015-06-10T22:27:09.812+0200 I NETWORK  [conn91] end connection 127.0.0.1:59940 (8 connections now open)
+2015-06-10T22:27:32.553+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59948 #92 (9 connections now open)
+2015-06-10T22:29:01.241+0200 I NETWORK  [conn90] end connection 127.0.0.1:59932 (8 connections now open)
+2015-06-10T22:29:01.241+0200 I NETWORK  [conn89] end connection 127.0.0.1:59931 (7 connections now open)
+2015-06-10T22:29:04.042+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59974 #93 (8 connections now open)
+2015-06-10T22:29:04.055+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59975 #94 (9 connections now open)
+2015-06-10T22:29:13.842+0200 I NETWORK  [conn71] end connection 127.0.0.1:59459 (8 connections now open)
+2015-06-10T22:29:13.843+0200 I NETWORK  [conn70] end connection 127.0.0.1:59458 (7 connections now open)
+2015-06-10T22:30:56.714+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:60020 #95 (8 connections now open)
+2015-06-10T22:30:56.760+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:60021 #96 (9 connections now open)
+2015-06-10T22:30:56.816+0200 I NETWORK  [conn96] end connection 127.0.0.1:60021 (8 connections now open)
+2015-06-10T22:30:56.817+0200 I NETWORK  [conn95] end connection 127.0.0.1:60020 (7 connections now open)
+2015-06-10T22:31:31.864+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:60034 #97 (8 connections now open)
+2015-06-10T22:31:31.902+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:60035 #98 (9 connections now open)
+2015-06-10T22:31:32.228+0200 I NETWORK  [conn98] end connection 127.0.0.1:60035 (8 connections now open)
+2015-06-10T22:31:32.229+0200 I NETWORK  [conn97] end connection 127.0.0.1:60034 (7 connections now open)
+2015-06-10T22:33:41.632+0200 I NETWORK  [conn94] end connection 127.0.0.1:59975 (6 connections now open)
+2015-06-10T22:33:41.634+0200 I NETWORK  [conn93] end connection 127.0.0.1:59974 (5 connections now open)
+2015-06-10T22:33:41.671+0200 I NETWORK  [conn61] end connection 127.0.0.1:59358 (4 connections now open)
+2015-06-10T22:33:41.672+0200 I NETWORK  [conn60] end connection 127.0.0.1:59357 (3 connections now open)
+2015-06-11T05:24:45.243+0200 I NETWORK  [conn92] end connection 127.0.0.1:59948 (2 connections now open)
+2015-06-11T05:25:34.478+0200 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:60781 #99 (3 connections now open)
+2015-06-11T05:26:04.457+0200 I COMMAND  [conn99] terminating, shutdown command received
+2015-06-11T05:26:04.457+0200 I CONTROL  [conn99] now exiting
+2015-06-11T05:26:04.458+0200 I NETWORK  [conn99] shutdown: going to close listening sockets...
+2015-06-11T05:26:04.458+0200 I NETWORK  [conn99] closing listening socket: 5
+2015-06-11T05:26:04.458+0200 I NETWORK  [conn99] closing listening socket: 6
+2015-06-11T05:26:04.458+0200 I NETWORK  [conn99] removing socket file: /tmp/mongodb-27017.sock
+2015-06-11T05:26:04.458+0200 I NETWORK  [conn99] shutdown: going to flush diaglog...
+2015-06-11T05:26:04.458+0200 I NETWORK  [conn99] shutdown: going to close sockets...
+2015-06-11T05:26:04.458+0200 I STORAGE  [conn99] shutdown: waiting for fs preallocator...
+2015-06-11T05:26:04.458+0200 I STORAGE  [conn99] shutdown: final commit...
+2015-06-11T05:26:04.458+0200 I NETWORK  [conn82] end connection 127.0.0.1:59663 (2 connections now open)
+2015-06-11T05:26:04.458+0200 I NETWORK  [conn83] end connection 127.0.0.1:59667 (2 connections now open)
+2015-06-11T05:26:04.462+0200 I JOURNAL  [conn99] journalCleanup...
+2015-06-11T05:26:04.462+0200 I JOURNAL  [conn99] removeJournalFiles
+2015-06-11T05:26:04.466+0200 I JOURNAL  [conn99] Terminating durability thread ...
+2015-06-11T05:26:04.561+0200 I JOURNAL  [journal writer] Journal writer thread stopped
+2015-06-11T05:26:04.561+0200 I JOURNAL  [durability] Durability thread stopped
+2015-06-11T05:26:04.562+0200 I STORAGE  [conn99] shutdown: closing all files...
+2015-06-11T05:26:04.565+0200 I STORAGE  [conn99] closeAllFiles() finished
+2015-06-11T05:26:04.565+0200 I STORAGE  [conn99] shutdown: removing fs lock...
+2015-06-11T05:26:04.565+0200 I CONTROL  [conn99] dbexit:  rc: 0

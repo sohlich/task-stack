@@ -1,21 +1,12 @@
 'use strict';
 
 angular.module('justWork')
-  .controller('TasklistCtrl', function($scope, $location, Security, UserStorage, TaskResource,$mdDialog) {
+  .controller('TasklistCtrl', TasklistCtrl);
 
-      $scope.tasks = [{
-        'title': 'Todo',
-        'description': 'Item that must be done',
-        'done': true
-      }, {
-        'title': 'Todo',
-        'description': 'Item that must be done',
-        'done': true
-      }];
 
-        //Function to redirect
-        $scope.redirect = function(path) {
-          $location.path(path);
-        };
-
-      });
+function TasklistCtrl($scope, $location, Security, UserStorage, TaskResource) {
+  $scope.tasks;
+  TaskResource.getAll({}, function(value, responseHeaders) {
+    $scope.tasks = value;
+  });
+};

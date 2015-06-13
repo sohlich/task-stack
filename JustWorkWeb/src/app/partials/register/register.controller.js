@@ -1,6 +1,7 @@
 'use strict';
 
 angular.module('justWork')
-  .controller('RegisterCtrl', function ($scope) {
-    
-  });
+  .controller('RegisterCtrl', RegisterCtrl);
+
+function RegisterCtrl($scope) {
+}

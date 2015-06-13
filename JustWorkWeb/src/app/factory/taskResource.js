@@ -10,6 +10,14 @@ angular.module('justWork')
                     headers:{'x-auth-token':$localStorage.hmacToken},
                     params:{}
                 },
+                getAll: {
+                    method: 'GET',
+                    url: baseUrl+'/api/task/all',
+                    isArray: true,
+                    headers:{'x-auth-token':$localStorage.hmacToken},
+                    params:{}
+                }
+                ,
                 saveTask: {
                     method: 'PUT',
                     url: baseUrl+'/api/task',

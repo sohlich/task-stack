@@ -6,6 +6,8 @@
 package cz.sohlich.workstack.service;
 
 import cz.sohlich.workstack.api.dto.TaskDTO;
+import cz.sohlich.workstack.exception.NoSuchUserException;
+import java.util.List;
 import org.springframework.stereotype.Service;
 
 /**
@@ -15,6 +17,7 @@ import org.springframework.stereotype.Service;
 @Service
 public interface TaskService {
     public TaskDTO createOrUpdateTask(TaskDTO task);
-    public TaskDTO deleteTask(String id);
+    public TaskDTO deleteTaskByIdAndUser(String id,String userId);
     public TaskDTO selectTask(String id);
+    public List<TaskDTO> selectAllByUserId(String userId) throws NoSuchUserException;
 }

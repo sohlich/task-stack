@@ -7,6 +7,10 @@ package cz.sohlich.workstack.domain;
 
 import java.util.Date;
 import java.util.List;
+import org.springframework.data.annotation.CreatedBy;
+import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.annotation.LastModifiedBy;
+import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.format.annotation.DateTimeFormat;
 
@@ -15,22 +19,32 @@ import org.springframework.format.annotation.DateTimeFormat;
  * @author radek
  */
 @Document(collection = "tasks")
-public class Task extends GenericEntity{
+public class Task extends GenericEntity {
+
+    @CreatedBy
+    @LastModifiedBy
+    String user;
+
+    @CreatedDate
+    Date creationTime;
+    
+    @LastModifiedDate
+    Date lastModifiedDate;
 
     String name;
     Integer estimatedTime;
-    
+
     @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME)
     Date deadline;
-    
+
     String Description;
     List<String> tags;
-    String user;
+
     Integer priority;
     Integer order;
     String category;
 
-
+    //Auditing
     public String getName() {
         return name;
     }
@@ -102,6 +116,5 @@ public class Task extends GenericEntity{
     public void setDeadline(Date deadline) {
         this.deadline = deadline;
     }
-    
-    
+
 }

@@ -25,7 +25,6 @@ public class SecurityResource {
     public void login(HttpServletResponse response) {
         log.info("Redirected to login via REST");
         response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
-
     }
 
 }

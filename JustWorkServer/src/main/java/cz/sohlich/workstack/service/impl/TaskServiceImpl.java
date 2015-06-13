@@ -5,10 +5,13 @@
  */
 package cz.sohlich.workstack.service.impl;
 
+import cz.sohlich.workstack.exception.NoSuchUserException;
 import cz.sohlich.workstack.api.dto.TaskDTO;
 import cz.sohlich.workstack.domain.Task;
 import cz.sohlich.workstack.repository.TaskRepository;
 import cz.sohlich.workstack.service.TaskService;
+import java.util.List;
+import java.util.stream.Collectors;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -21,11 +24,9 @@ public class TaskServiceImpl implements TaskService {
 
     @Autowired TaskRepository taskRepository;
 
-    
-    
     @Override
     public TaskDTO createOrUpdateTask(TaskDTO dto) {
-       
+
         Task task = dto.getId() != null ? taskRepository.findOne(dto.getId()) : null;
 
         if (task == null) {
@@ -54,14 +55,17 @@ public class TaskServiceImpl implements TaskService {
         if (dto.getTags() != null) {
             task.setTags(dto.getTags());
         }
+        if (dto.getUser() != null) {
+            task.setUser(dto.getUser());
+        }
 
         task = taskRepository.save(task);
         return new TaskDTO(task);
     }
 
     @Override
-    public TaskDTO deleteTask(String id) {
-        Task task = taskRepository.findOne(id);
+    public TaskDTO deleteTaskByIdAndUser(String id,String userId) {
+        Task task = taskRepository.findOneByIdAndUser(id,userId);
         TaskDTO result = new TaskDTO(task);
         taskRepository.delete(id);
         return result;
@@ -73,6 +77,13 @@ public class TaskServiceImpl implements TaskService {
         Task task = taskRepository.findOne(id);
         TaskDTO result = new TaskDTO(task);
         return result;
+    }
+
+    @Override
+    public List<TaskDTO> selectAllByUserId(String userId) throws NoSuchUserException {  
+        if (userId == null) {throw new NoSuchUserException();}
+        List<Task> tasks = taskRepository.findAllByUser(userId);
+        return tasks.stream().map(TaskDTO::new).collect(Collectors.toList());
     }
 
 }

@@ -12,8 +12,10 @@ import org.springframework.data.annotation.Id;
  * @author radek
  */
 public abstract class GenericEntity {
+
     @Id
     String id;
+
 
     public String getId() {
         return id;
@@ -22,5 +24,6 @@ public abstract class GenericEntity {
     public void setId(String id) {
         this.id = id;
     }
+    
     
 }
